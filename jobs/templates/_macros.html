@@ -9,8 +9,8 @@
         <div class="content">
             <p>
                 <a href="">{{ job['employer_name'] }}</a><br>
-                ${{job['salary']}}<br>
-                {{job['description']}}
+                ${{ job['salary'] }}<br>
+                {{ job['description'] }}
             </p>
         </div>
     </div>
@@ -23,5 +23,6 @@
     <div class="column is-half">
         {{show_job(job)}}
     </div>
+    {% endfor %}
 </div>
 {% endmacro %}
